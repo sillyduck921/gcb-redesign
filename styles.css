@@ -1,0 +1,250 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px; 
+    margin: 0px;  
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    background: #434151;
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 100;
+}
+
+h1 {
+    font-family: 'Britannic Bold';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF; 
+    flex-grow: 1.5;
+    margin: 0;
+    font-size: 32px;
+    padding: 9px 18px;
+}
+
+div {
+    display: flex;
+}
+
+.hamburger-mobile {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.menu-items {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Lucida Bright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF; 
+    line-height: 20px;
+}
+
+.picture {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.cover-photo {
+    width: 100%;
+    opacity: 80%;
+}
+
+.cover-words {
+    font-family: 'Britannic Bold';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF; 
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.purple {
+    background-color: #8C89C5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.white {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.subheader {
+    font-family: 'Britannic Bold';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.text {
+    font-family: 'Lucida Bright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF; 
+    text-align: center;
+}
+
+.text-list {
+    font-family: 'Lucida Bright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF; 
+    text-align: left;
+}
+
+.list{
+    text-align: left;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+#purple {
+    color: #291D40;
+}
+
+.button {
+    background: #0A7EBF;
+    border-radius: 8px;
+    height: 50px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 4px solid #0A7EBF;
+}
+
+.button:hover {
+    background: #FFFFFF;
+    color: #0A7EBF;
+}
+
+.footer {
+    background-color: #434151;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon {
+    margin-left: 5px; 
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: row;
+    }
+    .menu-items{
+        display: none;
+    }
+    .subheader {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    .text {
+        padding: 40px 50px;
+    }
+    .text-list {
+        padding-top: 20px;
+    }
+    .button {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+    .hamburger-mobile {
+        display: none;
+    }
+    .header {
+        font-size: 40px;
+    }
+    .menu-items{
+        width: 80%;
+    }
+    .subheader {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    .text {
+        padding: 40px 100px;
+    }
+    .text-list {
+        padding-top: 20px;
+    }
+    .button {
+        min-width: 300px;
+        max-width: 400px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1001px) {
+    .hamburger-mobile {
+        display: none;
+    }
+    .menu-items{
+        width: 50%;
+    }
+    .cover-words {
+        font-size: 70px;
+    }
+    .subheader {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    .text {
+        padding: 40px 250px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .text-list {
+        padding-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .list{
+        padding: 40px 250px;
+    }
+    .button {
+        width: 400px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+  }
+
